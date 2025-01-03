@@ -106,11 +106,16 @@ h2 {
 }
 
 .profile_image {
-  width: 550px;
-  height: fit-content;
-  vertical-align: middle;
-  margin: 5px;
+    width: 150px; /* Adjust size to your preference */
+    height: 150px;
+    border-radius: 50%; /* Makes the image circular */
+    border: 5px solid #4CAF50; /* Add a colored border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    object-fit: cover; /* Ensures the image scales properly */
+    margin: 20px auto; /* Adds spacing and centers the image */
+    display: block; /* Centers the image */
 }
+
 
 /* Skills */
 
