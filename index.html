@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1ebd4143bb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Animated Background Canvas -->
+    <canvas id="animated-bg"></canvas>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/images/img2.jpg" class="logo" alt="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-content">
+                <div class="header-text">
+                    <p>MERN stack Developer</p>
+                    <h1>Hi, i'm <span>Akash</span> Kumar<br>Sahoo From India</h1>
+                </div>
+                <div class="header-image">
+                    <img src="images/img2.jpg" alt="Profile Picture">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/img1.jpg" alt="About Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>
+                        Hi, I'm Akash — a passionate and dedicated B.Tech student at Einstein Academy of Technology and
+                        Management, Khurda.
+                        I’m a MERN Stack Developer skilled in building robust, scalable, and user-centric web
+                        applications using MongoDB, Express.js, React, and Node.js.
+                        I take pride in writing clean, efficient code and developing seamless digital experiences. With
+                        a strong focus on continuous learning and innovation,
+                        I’m always eager to explore new technologies and enhance my full-stack development skills.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event,'skills')">Skills</p>
+                        <!-- <p class="tab-links" onclick="opentab(event,'experience')">Experience</p> -->
+                        <p class="tab-links" onclick="opentab(event,'education')">Education</p>
+                    </div>
+                    <!-- skills -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span><i class="fas fa-code"></i> Developer<br></span>
+                                <ul class="skill-details">
+                                    <li>MERN Stack Developer — proficient in MongoDB, Express.js, React, and Node.js.
+                                    </li>
+                                    <li>Experienced in building full-stack, responsive, and scalable web applications.
+                                    </li>
+                                    <li>Skilled in RESTful APIs, database integration, and front-end optimization.</li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <span><i class="fas fa-vial"></i> Tester<br></span>
+                                <ul class="skill-details">
+                                    <li>Software Tester with hands-on experience in Selenium automation.</li>
+                                    <li>Proficient in writing and executing test cases for web applications.</li>
+                                    <li>Focused on ensuring software reliability, performance, and quality.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience -->
+                    <!-- <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><Span>Developer<br></Span>Full Stack Developer</li>
+                            <li><Span>Tester<br></Span>Software Tester</li>
+                        </ul>
+                    </div> -->
+                    <!-- Education -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>2024 - Present<br></span>
+                                B.Tech in Computer Science and Engineering from Einstein Academy of Technology and
+                                Management, Khordha
+                            </li>
+                            <li>
+                                <span>2021 - 2024<br></span>
+                                Diploma in Information Technology from S.K.D.A.V. Government Polytechnic, Rourkela
+                            </li>
+                            <li>
+                                <span>2019-2021<br></span>
+                                Completed Higher Secondary Education (12th) from Council of Higher Secondary Education,
+                                Odisha
+                            </li>
+                            <li>
+                                <span>2019<br></span>
+                                Completed Secondary Education (10th) from Board of Secondary Education, Odisha
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <!-- MERN Stack Development -->
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>MERN Stack Development</h2>
+                    <p>
+                        I specialize in building complete web applications using the MERN stack —
+                        MongoDB, Express.js, React, and Node.js. From designing dynamic front-end interfaces
+                        to developing secure, scalable back-end APIs, I deliver full-stack solutions with clean,
+                        maintainable code.
+                    </p>
+                </div>
+                <!-- Software Testing -->
+                <div>
+                    <i class="fa-solid fa-vial"></i>
+                    <h2>Software Testing</h2>
+                    <p>
+                        Experienced in both manual and automated testing using Selenium.
+                        I ensure software reliability, functionality, and performance through systematic testing,
+                        bug detection, and quality assurance to deliver error-free applications.
+                    </p>
+                </div>
+                <!-- App Development (Front-End) -->
+                <div>
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <h2>App Development (Front-End)</h2>
+                    <p>
+                        Skilled in creating responsive and visually appealing front-end applications
+                        using modern technologies like React, HTML, CSS, and JavaScript.
+                        I focus on crafting intuitive UI/UX designs that work seamlessly across devices.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- project -->
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.jpg" alt="image not found">
+                    <div class="layer">
+                        <h3>Student Result Management System</h3>
+                        <p>
+                            A web-based application where the admin can add students, manage subjects, and enter student
+                            details along with marks.
+                            Students can securely check their results and download their mark sheets online.
+                            <br><br><strong>Technologies Used:</strong> HTML, CSS, PHP, and MySQL (via phpMyAdmin).
+                        </p>
+                        <a href="https://github.com/kumarakash15/student-result-management-system" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.jpg" alt="image not found">
+                    <div class="layer">
+                        <h3>SmartLearn_AI</h3>
+                        <p>
+                            <strong>AI-Driven Personalized Learning Assistant</strong><br>
+                            SmartLearn AI is an Android-based application designed to make education smarter and more
+                            engaging.
+                            It personalizes learning experiences using artificial intelligence — allowing students to
+                            explore, learn, and track their progress effectively.
+                            Teachers can manage courses, while students can access materials, view progress, and
+                            interact with an integrated AI chatbot for academic support.
+                            <br><br>
+                            <strong>Key Features:</strong><br>
+                            🎓 Personalized Learning & Progress Tracking<br>
+                            🤖 AI Chatbot Assistant (Gemini API)<br>
+                            📊 Interactive Dashboard with Analytics<br>
+                            📚 Dynamic Course Management for Teachers<br>
+                            🔔 Smart Notifications & Optimized Performance
+                            <br><br>
+                            <strong>Technologies Used:</strong><br>
+                            React Native (Expo), Spring Boot, MySQL, Gemini API
+                        </p>
+                        <a href="https://github.com/Mr-Saroj/SmartLearn_AI" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.jpg" alt="image not found">
+                    <div class="layer">
+                        <h3>Smart Switch Board</h3>
+                        <p>
+                            The Smart Switch Board project allows users to control all household electrical devices
+                            directly through their mobile phones.
+                            Using IoT-based automation, the system provides wireless control for lights, fans, and other
+                            appliances via a user-friendly mobile interface.
+                            This project enhances home convenience, energy efficiency, and safety by enabling remote
+                            access and real-time device status monitoring.
+                            <br><br>
+                            <strong>Technology Used:</strong> IoT, ESP-32, C Programming, and
+                            Web App Interface.
+                        </p>
+                        <a href="https://github.com/kumarakash15/smart-switch-board" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>akashsahoo31538@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 7735705128</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/akash.kumarsahoo.15/" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/akash_sahoo_15?utm_source=qr&igsh=bTU5OG5raWNybmVr"
+                            target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/akash150604/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/kumarakash15" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/Akash kumar sahoo resume.pdf" class="btn btn2" download>Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form action="" name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter your name" required>
+                        <input type="Email" name="Email" placeholder="Enter your email" required>
+                        <textarea name="Message" rows="6" placeholder="Enter your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © Ak Tech. Made by Akash<i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="animation.js"></script>
+</body>
+
+</html>
