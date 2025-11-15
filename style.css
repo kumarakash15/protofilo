@@ -569,9 +569,6 @@ form .btn2{
 }
 /* css for responsive */
 @media only screen and (max-width:768px){
-    #header{
-        background-image: url(images/phone-background.png);
-    }
     .header-content{
         flex-direction: column;
         text-align: center;
